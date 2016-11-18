@@ -1,0 +1,15 @@
+<div class='row'>
+  <div class='col-xs-12'>
+    <h1 class='title'>Redirect rules</h1>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-md-9'>
+    <%= paginate @redirect_rules_grid.assets %>
+    <%= datagrid_table @redirect_rules_grid, html: { class: 'table table-hover table-striped' } %>
+    <%= paginate @redirect_rules_grid.assets %>
+  </div>
+  <div class='col-md-3'>
+    <%= datagrid_form_for @redirect_rules_grid, method: :get, url: url_for(only_path: false) %>
+  </div>
+</div>
