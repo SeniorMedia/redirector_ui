@@ -5,8 +5,8 @@ module RedirectorUi
     scope { RedirectRule }
 
     def initialize attributes = nil, &block
-      self.order ||= 'source'
-      self.descending ||= 'false'
+      self.order ||= 'created_at'
+      self.descending ||= 'true'
       super(attributes, &block)
     end
 
@@ -16,6 +16,11 @@ module RedirectorUi
     filter(:source_is_regex, :xboolean)
     filter(:source_is_case_sensitive, :xboolean)
 
+    column(:created_at) do |r|
+      format(r.created_at) do |value|
+        I18n.l r.created_at
+      end
+    end
     column(:source)
     column(:destination)
     column(:active) do |r|
