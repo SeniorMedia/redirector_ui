@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = RedirectorUi::VERSION
   s.authors     = ['Fabien Dobat']
   s.email       = ['fabien.dobat@seniormedia.fr']
-  s.homepage    = 'http://homepage.com'
+  s.homepage    = 'https://github.com/SeniorMedia/redirector_ui'
   s.summary     = 'Redirector gem interface'
   s.description = 'A simple Rails engine that provides an interface for redirector gem'
   s.license     = 'MIT'
