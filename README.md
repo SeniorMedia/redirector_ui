@@ -1,8 +1,10 @@
 # RedirectorUi
-Short description and motivation.
+A simple Rails engine that provides an interface for [redirector](https://github.com/vigetlabs/redirector) gem.
 
 ## Usage
-How to use my plugin.
+```ruby
+mount RedirectorUi::Engine, at: '/redirects'
+```
 
 ## Installation
 Add this line to your application's Gemfile:
