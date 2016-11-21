@@ -1,5 +1,5 @@
 RedirectorUi::Engine.routes.draw do
-  resources :redirect_rules, only: [ :index, :edit, :update, :destroy ]
+  resources :redirect_rules
 
   root to: 'redirect_rules#index'
 end

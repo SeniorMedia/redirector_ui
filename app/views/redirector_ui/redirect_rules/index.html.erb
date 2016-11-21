@@ -4,20 +4,35 @@
   </div>
 </div>
 <div class='row'>
-  <div class='col-md-9'>
-    <div class='col-xs-12'>
-      <%= paginate @redirect_rules_grid.assets, html: { class: 'pull-left' } %>
-      <%= link_to fa_icon(:download, text: 'Download'), url_for(format: 'csv', redirector_ui_redirect_rules_grid: params.fetch(:redirector_ui_redirect_rules_grid, {}).permit!.to_h), class: 'pull-right' %>
+  <div class='col-xs-12'>
+    <%= link_to 'New', redirector_ui.new_redirect_rule_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-lg-3 col-lg-push-9 col-xs-12'>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <%= datagrid_form_for @redirect_rules_grid, method: :get, url: url_for(only_path: false) %>
+      </div>
     </div>
-    <%= datagrid_table @redirect_rules_grid, html: { class: 'table table-hover table-striped' } %>
+  </div>
+  <div class='col-lg-9 col-lg-pull-3 col-xs-12'>
     <div class='row'>
       <div class='col-xs-12'>
         <%= paginate @redirect_rules_grid.assets, html: { class: 'pull-left' } %>
         <%= link_to fa_icon(:download, text: 'Download'), url_for(format: 'csv', redirector_ui_redirect_rules_grid: params.fetch(:redirector_ui_redirect_rules_grid, {}).permit!.to_h), class: 'pull-right' %>
       </div>
     </div>
-  </div>
-  <div class='col-md-3'>
-    <%= datagrid_form_for @redirect_rules_grid, method: :get, url: url_for(only_path: false) %>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <%= datagrid_table @redirect_rules_grid, html: { class: 'table table-hover table-striped' } %>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <%= paginate @redirect_rules_grid.assets, html: { class: 'pull-left' } %>
+        <%= link_to fa_icon(:download, text: 'Download'), url_for(format: 'csv', redirector_ui_redirect_rules_grid: params.fetch(:redirector_ui_redirect_rules_grid, {}).permit!.to_h), class: 'pull-right' %>
+      </div>
+    </div>
   </div>
 </div>

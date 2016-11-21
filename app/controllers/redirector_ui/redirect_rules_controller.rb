@@ -19,6 +19,20 @@ module RedirectorUi
       end
     end
 
+    def new
+      @redirect_rule = RedirectRule.new
+    end
+
+    def create
+      @redirect_rule = RedirectRule.new(redirect_rule_params)
+
+      if @redirect_rule.save
+        redirect_to redirector_ui.redirect_rules_path, notice: 'Redirect rule has been correctly created.'
+      else
+        render action: 'new'
+      end
+    end
+
     def edit
     end
 
