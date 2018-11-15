@@ -1,6 +1,8 @@
+require 'datagrid'
+
 module RedirectorUi
   class RedirectRulesGrid
-    include Datagrid
+    include ::Datagrid
 
     scope { RedirectRule }
 
