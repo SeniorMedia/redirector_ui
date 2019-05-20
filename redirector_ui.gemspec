@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'bootstrap'
+  s.add_dependency 'bootstrap', '>= 4.0.0'
   s.add_dependency 'datagrid'
   s.add_dependency 'font-awesome-rails'
   s.add_dependency 'jquery-rails'

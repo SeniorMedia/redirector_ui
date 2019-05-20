@@ -45,7 +45,7 @@
   </div>
 
   <div class='form-group row'>
-    <div class='col-xs-12'>
+    <div class='col-sm-12'>
       <%= f.submit nil, class: 'btn btn-primary pull-left' %>
       <% if @redirect_rule.persisted? %>
         <%= link_to 'Destroy', redirector_ui.redirect_rule_path(@redirect_rule), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger pull-right' %>
