@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    redirector_ui (1.2)
+    redirector_ui (1.2.1)
       bootstrap (>= 4.0.0)
       datagrid
       font-awesome-rails

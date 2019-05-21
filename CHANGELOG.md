@@ -8,3 +8,8 @@ _2016-11-21_
 _2017-08-29_
 
 * Fix #1 - uninitialized constant FontAwesome::Rails::IconHelper
+
+### 1.2.1
+_2019-05-21_
+
+* Support Bootstrap 4 stable
