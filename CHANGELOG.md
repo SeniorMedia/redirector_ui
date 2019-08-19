@@ -13,3 +13,8 @@ _2017-08-29_
 _2019-05-21_
 
 * Support Bootstrap 4 stable
+
+### 1.2.1.1
+_2019-08-19_
+
+* Fix some missing Bootstrap 4 classes
